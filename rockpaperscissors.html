@@ -27,10 +27,15 @@
       else if (playerSelection.toUpperCase() === 'SCISSORS' && compSelection === 'Rock') { return 'You lose! Rock beats scissors!'; }
       else if (playerSelection.toUpperCase() === 'SCISSORS' && compSelection === 'Paper') { return 'You win! Scissors beats paper!'; }
       else if (playerSelection.toUpperCase() === 'SCISSORS' && compSelection === 'Scissors') { return 'A draw! Scissors draws with scissors!'; }
+      else { return 'Your selection was not recognised';}
     }
 
     function game() {
+      let playerTotal = 0;
+      let compTotal = 0;
 
+      let playerSelection = Window.prompt('Round 1! Enter your selection (rock, paper, or scissors)');
+      console.log(playRound(playerSelection, compSelection));
     }
 
   </script>
