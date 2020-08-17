@@ -7,10 +7,31 @@
   </head>
 
   <body>
-      <p>This game is going to be played completely from the console for now.</p>
-      <script>
-          function computerPlay() {
-              
-          }
-      </script>
+    <p>This game is going to be played completely from the console for now.</p>
+    <script>
+        function generateCompSelection() {
+            let randomNumber = Math.floor((3-1 + 1) * Math.random()) + 1;
+            if (randomNumber === 1) {return 'Rock';}
+            else if (randomNumber === 2) {return 'Paper';}
+            else {return 'Scissors';}
+        }
+
+        function playRound(playerSelection, compSelection) {
+            let playerSelectionUpper = playerSelection.toUpperCase();
+            if (playerSelectionUpper === 'ROCK' && compSelection === 'Rock') {return 'A draw! Rock draws with rock!';}
+            else if (playerSelectionUpper === 'ROCK' && compSelection === 'Paper') {return 'You lose! Paper beats rock!';}
+            else if (playerSelectionUpper === 'ROCK' && compSelection === 'Scissors') {return 'You win! Rock beats scissors!';}
+            else if (playerSelectionUpper === 'PAPER' && compSelection === 'Rock') {return 'You win! Paper beats rock!';}
+            else if (playerSelectionUpper === 'PAPER' && compSelection === 'Paper') {return 'A draw! Paper draws with paper!';}
+            else if (playerSelectionUpper === 'PAPER' && compSelection === 'Scissors') {return 'You lose! Scissors beats paper!';}
+            else if (playerSelectionUpper === 'SCISSORS' && compSelection === 'Rock') {return 'You lose! Rock beats scissors!';}
+            else if (playerSelectionUpper === 'SCISSORS' && compSelection === 'Paper') {return 'You win! Scissors beats paper!';}
+            else if (playerSelectionUpper === 'SCISSORS' && compSelection === 'Scissors') {return 'A draw! Scissors draws with scissors!';}
+        }
+
+        // test
+        let playerSelection = 'rOck';
+        let compSelection = generateCompSelection();
+        console.log(playRound(playerSelection, compSelection));
+    </script>
   </body>
