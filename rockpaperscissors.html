@@ -18,22 +18,22 @@
     }
 
     function playRound(playerSelection, compSelection) {
-      if (playerSelection.toUpperCase() === 'ROCK' && compSelection === 'Rock') { return 'A draw! Rock draws with rock!'; }
-      else if (playerSelection.toUpperCase() === 'ROCK' && compSelection === 'Paper') { return 'You lose! Paper beats rock!'; }
-      else if (playerSelection.toUpperCase() === 'ROCK' && compSelection === 'Scissors') { return 'You win! Rock beats scissors!'; }
-      else if (playerSelection.toUpperCase() === 'PAPER' && compSelection === 'Rock') { return 'You win! Paper beats rock!'; }
+      if (playerSelection.toUpperCase() === 'ROCK' && compSelection === 'Rock') { return 'A draw! Rock draws with rock'; }
+      else if (playerSelection.toUpperCase() === 'ROCK' && compSelection === 'Paper') { compTotal++; return 'You lose! Paper beats rock'; }
+      else if (playerSelection.toUpperCase() === 'ROCK' && compSelection === 'Scissors') { playerTotal++; return 'You win! Rock beats scissors'; }
+      else if (playerSelection.toUpperCase() === 'PAPER' && compSelection === 'Rock') { playerTotal++; return 'You win! Paper beats rock'; }
       else if (playerSelection.toUpperCase() === 'PAPER' && compSelection === 'Paper') { return 'A draw! Paper draws with paper!'; }
-      else if (playerSelection.toUpperCase() === 'PAPER' && compSelection === 'Scissors') { return 'You lose! Scissors beats paper!'; }
-      else if (playerSelection.toUpperCase() === 'SCISSORS' && compSelection === 'Rock') { return 'You lose! Rock beats scissors!'; }
-      else if (playerSelection.toUpperCase() === 'SCISSORS' && compSelection === 'Paper') { return 'You win! Scissors beats paper!'; }
+      else if (playerSelection.toUpperCase() === 'PAPER' && compSelection === 'Scissors') { compTotal++; return 'You lose! Scissors beats paper!'; }
+      else if (playerSelection.toUpperCase() === 'SCISSORS' && compSelection === 'Rock') { compTotal++; return 'You lose! Rock beats scissors!'; }
+      else if (playerSelection.toUpperCase() === 'SCISSORS' && compSelection === 'Paper') { playerTotal++; return 'You win! Scissors beats paper!'; }
       else if (playerSelection.toUpperCase() === 'SCISSORS' && compSelection === 'Scissors') { return 'A draw! Scissors draws with scissors!'; }
       else { return 'Your selection was not recognised';}
     }
 
-    function game() {
-      let playerTotal = 0;
-      let compTotal = 0;
+    let playerTotal = 0;
+    let compTotal = 0;
 
+    function game() {
       let playerSelection = Window.prompt('Round 1! Enter your selection (rock, paper, or scissors)');
       console.log(playRound(playerSelection, compSelection));
     }
