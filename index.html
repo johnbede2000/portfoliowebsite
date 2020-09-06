@@ -11,8 +11,6 @@
 
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/10e8632cd5.js" crossorigin="anonymous"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,9 +33,9 @@
   <main>
     <div class="whitespace-div" id="projects">
       <section class="projects-grid">
-        <a href="https://github.com/johnbede2000/portfoliowebsite" target="_blank" class="project-tile">
-          <img src="https://res.cloudinary.com/dd23iaiap/image/upload/v1590528417/johnbede_laynz2.png" alt="John Bede website" class="project-img">
-          <p class="project-description"><span class="appear">&#60;</span>Portfolio page<span class="appear"> &#47;&#62;</span></p>
+        <a href="soundboard/index.html" target="_blank" class="project-tile">
+          <img src="https://res.cloudinary.com/dd23iaiap/image/upload/v1590528417/johnbede_laynz2.png" alt="Singing Keyboard" class="project-img">
+          <p class="project-description"><span class="appear">&#60;</span>Singing Keyboard<span class="appear"> &#47;&#62;</span></p>
         </a>
 
         <a href="https://codepen.io/johnbede/pen/gOavMPj?editors=1100" target="_blank" class="project-tile">
@@ -75,25 +73,6 @@
         </a>
 
       </div> <!-- end of contact 'buttons' -->
-
-      <button id="email-button" class="contact-button" onclick="copyToClipboard('#copythis')">
-          <div>
-            <span id="copythis">johnbede2000@gmail.com</span>
-          </div>
-          <p class="small-text">Copy to clipboard</p>
-        </button>
-        
-        <!-- Ideally mailto: works when clicking, but it didn't immediately for me testing using Chrome on Windows10, so I added a copy to clipboard option -->
-        <script>
-        function copyToClipboard(element) {
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(element).text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        alert("John's email address has been copied to your clipboard");
-        }
-        </script>
 
     </section>
   </main>
