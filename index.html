@@ -1,83 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="UTF-8">
-  <title>John Bede | Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/10e8632cd5.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>John Bede | Developer</title>
+    <meta
+      name="Description"
+      content="Junior developer with a passion for learning."
+    />
+    <meta
+      name="Keywords"
+      content="portfolio, developer, javascript, react, css, web"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/10e8632cd5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <nav id=navbar>
-    <ul>
-      <li><a href="#welcome-section">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="blog/">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="cv.html">CV</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <section id="welcome-section">
-    <div class="logo">
-      <h1 class="name-logo">John Bede</h1>
-      <p class="subtitle">Developer</p>
-    </div>
-    <a href="#projects" class="scroll-text">Scroll down for projects...</a>
-  </section>
-
-  <main>
-    <div class="whitespace-div" id="projects">
-      <h2 class="contact-header">Example Projects</h2>
-      <section class="projects-grid">
-        <a href="soundboard/" class="project-tile">
-          <img src="https://res.cloudinary.com/dd23iaiap/image/upload/v1600027236/127.0.0.1_5500__Dell_XPS_15_ofsu91.png" alt="Singing Keyboard" class="project-img">
-          <p class="project-description"><span class="appear">&#60;</span>Singing Keyboard<span class="appear"> &#47;&#62;</span></p>
-        </a>
-
-        <a href="rockpaperscissors/" class="project-tile">
-          <img src="https://res.cloudinary.com/dd23iaiap/image/upload/v1600086260/127.0.0.1_5500_rockpaperscissors.html_iPad_fgwids.png" alt="Rock paper scissors game" class="project-img">
-          <p class="project-description"><span class="appear">&#60;</span>Rock Paper Scissors<span class="appear"> &#47;&#62;</span></p>
-        </a>
-
-        <a href="etch/" class="project-tile">
-          <img src="https://res.cloudinary.com/dd23iaiap/image/upload/v1600253424/127.0.0.1_5500__iPad_yqwjxu.png" alt="Etch A Sketch" class="project-img">
-          <p class="project-description"><span class="appear">&#60;</span>Etch A Sketch<span class="appear"> &#47;&#62;</span></p>
-        </a>
-
-        <a href="" class="project-tile">
-          <img src="https://res.cloudinary.com/dd23iaiap/image/upload/v1590152830/survey_ohrjw0.png" alt="Side navigation webpage" class="project-img">
-          <p class="project-description"><span class="appear">&#60;</span>Pending Project<span class="appear"> &#47;&#62;</span></p>
-        </a>
-      </section>
-    </div><!--end of whitespace div-->
-    
-    <section id="contact">
-      <h2 class="contact-header">Find me online...</h2>
-      
-      <div class="contact-links">
-        
-
-        <a id="linkedin" href="https://www.linkedin.com/in/john-bede-9664191a5/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i>&ensp;LinkedIn</a>
-
-        <a id="github" href="https://github.com/johnbede2000" id="profile-link" target="_blank" class="social-link"><i class="fab fa-github"></i>&ensp;GitHub</a>
-
-        <a id="codepen" href="https://codepen.io/johnbede/collections/" target="_blank" class="social-link"><i class="fab fa-codepen"></i>&ensp;CodePen</a>
-
-        <a id="mailto" class="contact-button" href="mailto:johnbede2000@gmail.com">
-          <div>
-            <i class="far fa-envelope"></i>&ensp;<span>Email</span>
-          </div>
-          <p class="small-text">Open in your default email app</p>
-        </a>
-
-      </div> <!-- end of contact 'buttons' -->
-
+    <section id="welcome-section" class="flex-col">
+      <div class="logo">
+        <h1 class="name-logo">John Bede</h1>
+        <p class="logo-subtitle">Developer</p>
+      </div>
+      <a href="#projects" class="scroll-text">Scroll down for projects...</a>
     </section>
-  </main>
 
-  <footer>
-    <p>Copyright &copy; John Bede 2020</p>
-  </footer>
-</body>
+    <main class="flex-col">
+      <div class="whitespace-div" id="projects">
+        <h2 class="contact-header">Example Projects</h2>
+        <section class="projects-grid">
+          <a href="https://www.johncervantes.co.uk" class="project-tile">
+            <img
+              src="https://res.cloudinary.com/dd23iaiap/image/upload/v1606216949/www.johncervantes.co.uk_about.html_iPad_ydzupr.png"
+              alt="Musician website"
+              class="project-img"
+            />
+            <p class="project-description">
+              <span class="appear">&#60;</span>Musician website<span
+                class="appear"
+              >
+                &#47;&#62;</span
+              >
+            </p>
+          </a>
+
+          <!-- <a href="soundboard/" class="project-tile">
+            <img
+              src="https://res.cloudinary.com/dd23iaiap/image/upload/v1600027236/127.0.0.1_5500__Dell_XPS_15_ofsu91.png"
+              alt="Singing Keyboard"
+              class="project-img"
+            />
+            <p class="project-description">
+              <span class="appear">&#60;</span>Singing Keyboard<span
+                class="appear"
+              >
+                &#47;&#62;</span
+              >
+            </p>
+          </a> -->
+
+          <a href="rockpaperscissors/" class="project-tile">
+            <img
+              src="https://res.cloudinary.com/dd23iaiap/image/upload/v1600086260/127.0.0.1_5500_rockpaperscissors.html_iPad_fgwids.png"
+              alt="Rock paper scissors game"
+              class="project-img"
+            />
+            <p class="project-description">
+              <span class="appear">&#60;</span>Rock Paper Scissors<span
+                class="appear"
+              >
+                &#47;&#62;</span
+              >
+            </p>
+          </a>
+
+          <a href="etch/" class="project-tile">
+            <img
+              src="https://res.cloudinary.com/dd23iaiap/image/upload/v1600253424/127.0.0.1_5500__iPad_yqwjxu.png"
+              alt="Etch A Sketch"
+              class="project-img"
+            />
+            <p class="project-description">
+              <span class="appear">&#60;</span>Etch A Sketch<span
+                class="appear"
+              >
+                &#47;&#62;</span
+              >
+            </p>
+          </a>
+
+          <a href="landing.html" class="project-tile">
+            <img
+              src="https://res.cloudinary.com/dd23iaiap/image/upload/v1590152827/product_farkxv.png"
+              alt="Responsive landing page"
+              class="project-img"
+            />
+            <p class="project-description">
+              <span class="appear">&#60;</span>Responsive page<span
+                class="appear"
+              >
+                &#47;&#62;</span
+              >
+            </p>
+          </a>
+          <a href="form.html" class="project-tile">
+            <img
+              src="https://res.cloudinary.com/dd23iaiap/image/upload/v1590152830/survey_ohrjw0.png"
+              alt="Responsive form"
+              class="project-img"
+            />
+            <p class="project-description">
+              <span class="appear">&#60;</span>Responsive form<span
+                class="appear"
+              >
+                &#47;&#62;</span
+              >
+            </p>
+          </a>
+        </section>
+      </div>
+      <!--end of whitespace div-->
+
+      <section id="contact">
+        <h2 class="contact-header">Find me online...</h2>
+
+        <div class="contact-links">
+          <a
+            id="linkedin"
+            href="https://www.linkedin.com/in/john-bede-9664191a5/"
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-linkedin"></i>&ensp;LinkedIn</a
+          >
+
+          <a
+            id="github"
+            href="https://github.com/johnbede2000"
+            id="profile-link"
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-github"></i>&ensp;GitHub</a
+          >
+
+          <!-- <a id="codepen" href="https://codepen.io/johnbede/collections/" target="_blank" class="social-link"><i class="fab fa-codepen"></i>&ensp;CodePen</a> -->
+
+          <a
+            id="mailto"
+            class="contact-button"
+            href="mailto:johnbede2000@gmail.com"
+          >
+            <div><i class="far fa-envelope"></i>&ensp;<span>Email</span></div>
+            <p class="small-text">Open in your default email app</p>
+          </a>
+        </div>
+        <!-- end of contact 'buttons' -->
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; John Bede 2020</p>
+    </footer>
+  </body>
+</html>

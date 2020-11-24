@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /*font-weight: 300;*/
+  margin: 0;
+  color: white;
+  background: linear-gradient(
+      to bottom right,
+      rgb(0, 0, 0, 0.3),
+      rgb(0, 0, 255, 0.3),
+      rgb(255, 255, 255, 0.3)
+    ),
+    url('https://res.cloudinary.com/dd23iaiap/image/upload/v1588684546/headphones_dgt145.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#description {
+  margin-top: 0.5rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select,
+textarea {
+  border-radius: 0.25rem;
+  border: none;
+  padding: 0.25rem;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 50%;
+  }
+}
+
+.container div {
+  margin-bottom: 2rem;
+}
+
+#submit {
+  width: 100%;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom right, orange, purple);
+  border: none;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.text-wide {
+  width: 100%;
+  min-height: 2rem;
+  margin-top: 0.5rem;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 5rem;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.own-line {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5em;
+}
+
+#dropdown {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+form p {
+  margin-bottom: 0;
+}

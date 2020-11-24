@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <meta name="Description" content="Responsive design form." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="www.johnbe.de" />
+  </head>
+  <body>
+    <h1 id="title" class="center">Musical Preference Survey Form</h1>
+    <p id="description" class="center"><em>Thank you for taking the time to complete this survey</em></p>
+    
+    <div class="container">
+    <form id="survey-form" action="#">
+      <div><label id="name-label">Name<input required type="text" placeholder="Enter your name" id="name" class="text-wide" name="name"></label>
+      </div>
+      
+      <div>
+      <label id="email-label">Email<input required type="email" placeholder="Enter your email address" id="email" class="text-wide" name="email"></label>
+      </div>
+      
+      <div>
+      <label id="number-label">Age (optional)<input type="number" placeholder="Age" id="number" min="5" max="150" class="text-wide" name="age"></label>
+      </div>
+      
+      <div>
+      <Label for="dropdown">Location
+      <Select id="dropdown" name="location">
+        <option disabled selected value>Select location</option>
+        <option value"europe">Europe</option>
+        <option value="n-america">North America</option>
+        <option value="other">Other</option>
+      </Select></Label>
+        <div>
+   
+      <div>
+        <p>How often do you actively listen to music, without distraction, as a primary activity?</p>
+      <label class="own-line" for="daily">
+        <input id="daily"
+               value="daily"
+               type="radio"
+               name="frequency"
+               class="own-line"
+               checked>
+      Daily</label>
+      
+      <label class="own-line" for="few">
+        <input id="few" 
+               value="few-days" 
+               type="radio" 
+               name="frequency"
+               class="own-line"> 
+      Every few days</label>
+      
+      <label class="own-line" for="weekly">
+        <input id="weekly" 
+               value="weekly" 
+               type="radio" 
+               name="frequency"
+               class="own-line">  
+      Weekly</label>
+      </div>
+      
+      <div>
+      <p>Which styles of music do you listen to? (Tick all that apply)</p>
+      <label class="own-line" for="pop">
+        <input type="checkbox" 
+               id="pop" 
+               name="style"
+               value="pop"
+               class="own-line">   
+      Pop</label>
+      
+      <label class="own-line" for="jazz">
+        <input type="checkbox" 
+               id="jazz" 
+               name="style"
+               value="jazz"
+               class="own-line">   
+      Jazz</label>
+      
+       <label class="own-line" for="classical">
+        <input type="checkbox" 
+               id="classical" 
+               name="style"
+               value="classical"
+               class="own-line">   
+      Classical</label>
+      
+      <label class="own-line" for="Hip-hop">
+        <input type="checkbox" 
+               id="hip-hop" 
+               name="style"
+               value="hip-hop"
+               class="own-line">   
+      Hip-hop</label>
+      
+      <label class="own-line" for="folk">
+        <input type="checkbox" 
+               id="folk" 
+               name="style"
+               value="folk"
+               class="own-line">  
+      Folk</label>
+      </div>
+      
+      <div>
+      <label for="comments">Any additional comments?
+      <textarea id="comments" maxlength="1000" placeholder="Enter any additional comments here" class="text-wide" name="comments"></textarea></label>
+      </div>
+      
+      <div>
+      <button id="submit" type="submit">Submit</button>
+      </div>
+      
+    </form>
+      </div>
+  </body>
+</html>
