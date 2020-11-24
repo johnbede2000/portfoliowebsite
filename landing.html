@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="landing.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <title>Example landing page</title>
+    <meta name="Description" content="An example of responsive design" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="www.johnbe.de" />
+    <script
+      src="https://kit.fontawesome.com/10e8632cd5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div id="logo">
+        <img id="header-img" alt="Trumpet Company logo" src="https://res.cloudinary.com/dd23iaiap/image/upload/v1589376136/trumpet_qwxxvn.png"></img>
+        <div id="logo-text">Acme Trumpets</div>
+      </div>
+      
+      <nav id="nav-bar">
+      <ul>
+        <li><a href="#products-section" class="nav-link">Products</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        </ul> </nav>
+    </header>
+  
+    <div id="email-signup">
+      <h4>Hand-crafted brass trumpets now available in three sizes!</h4>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Enter your email address to join the mailing list:
+        </label>
+        <input type="email" id="email" name="email" placeholder="Email address">
+        <input type="submit" id="submit">
+      </form>
+    </div>
+  
+    <main>
+      <section id="products-section">
+        <div class="product" id="large-trp">
+          <h3 class="product-name">Large Trumpet</h3>
+          <h4>£1 million</h4>
+          <ul>
+            <li>2,687 square feet</li>
+            <li>Produces very loud noises</li>
+            <li>Also doubles as a home</li>
+          </ul>
+          <a class=button href="#">Buy now!</a>
+        </div>
+  
+        <div class="product" id="medium-trp">
+          <h3 class="product-name">Medium Trumpet</h3>
+          <h4>£50,000</h4>
+          <ul>
+            <li>About normal size</li>
+            <li>Professionals' choice</li>
+            <li>Produces typical sound</li>
+          </ul>
+          <a class=button href="#">Buy now!</a>
+        </div>
+  
+        <div class="product" id="small-trp">
+          <h3 class="product-name">Small Trumpet</h3>
+          <h4>£1,000</h4>
+          <ul>
+            <li>Convenient to carry</li>
+            <li>Fits in your pocket</li>
+            <li>Suitable for a musical pet</li>
+          </ul>
+          <a class=button href="#">Buy now!</a>
+        </div>
+      </section>
+  
+      <section id="about">
+        <div class=about-flex>
+          <i class="fas fa-truck icon"></i>
+          <div class=description>
+            <h3>Fast delivery</h3>
+            <p>Order by 2pm and our trumpets will be delivered next-working day by our trusted couriers.</p>
+          </div>
+        </div>
+  
+        <div class=about-flex>
+          <i class="fas fa-people-carry icon"></i>
+          <div class=description>
+            <h3>Family business</h3>
+            <p>Acme Trumpets was founded in 1947 by James 'Brassface' Acme Snr. The Acme family has produced trumpets ever since at its Central London farm, and in recent times has expanded its range to three sizes.</p>
+          </div>
+        </div>
+  
+        <div class=about-flex>
+          <i class="fas fa-hammer icon"></i>
+          <div class=description>
+            <h3>Premium materials</h3>
+            <p>Our trumpets are produced using premium brass which is mined from our own family-run mines in Central London.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <!-- I removed width= from the <iframe>, see CSS -->
+        <iframe id="video" height="315" src="https://www.youtube.com/embed/4GBztzj_Hjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </section>
+    </main>
+  
+    <footer>
+      <ul id=footer-links>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  
+      <p id=copyright>&copy; 2020 by Acme Trumpets</p>
+    </footer>
+  </body>
+</html>

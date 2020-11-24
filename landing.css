@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+}
+
+header,
+#email-signup,
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.75rem;
+  border-bottom: solid gainsboro 1px;
+}
+
+@media only screen and (min-width: 425px) {
+  #nav-bar > ul {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  header {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-img {
+  width: 5rem;
+  height: auto;
+}
+
+#logo-text {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  padding: 0.25rem 2rem;
+  display: block;
+  color: black;
+}
+
+@media only screen and (min-width: 425px) {
+  #nav-bar a {
+    padding: 0 0 0 2rem;
+  }
+}
+
+#nav-bar li {
+  list-style-type: none;
+}
+
+/*Email signup*/
+
+#email-signup {
+  margin: 8rem 0.5rem 1rem 0.5rem;
+}
+
+#email-signup,
+#form,
+#email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+#email-signup label {
+  font-size: 0.9rem;
+}
+
+#email-signup input[type='email'] {
+  /*width: 275px;*/
+  margin-bottom: 5px;
+}
+
+/*Products Section*/
+
+main {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#products-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 610px) {
+  #products-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.product {
+  border: solid black 1px;
+  border-radius: 3px;
+  width: 200px;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 610px) {
+  .product {
+    margin: 1rem 2px 2rem 2px;
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .product {
+    margin: 1rem 1rem 2rem 1rem;
+  }
+}
+
+.product-name {
+  background-color: gainsboro;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.product ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.product li {
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: orange;
+  padding: 0.25rem 0.5rem;
+  margin-top: 1rem;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid gainsboro 1px;
+}
+
+.product h4 {
+  margin-bottom: 0.5rem;
+}
+
+/*About*/
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  max-width: 80ch;
+}
+
+@media only screen and (min-width: 768px) {
+  #about {
+    align-items: flex-start;
+  }
+}
+
+#about .icon {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #about .icon {
+    display: block;
+    font-size: 3rem;
+    color: orange;
+    margin-right: 1.5rem;
+  }
+}
+
+.about-flex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-flex {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+
+#testimonials {
+  width: 100%;
+  max-width: 560px;
+}
+
+#testimonials h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#video {
+  max-width: 560px;
+  width: 100%;
+}
+
+/*Footer*/
+
+footer {
+  background-color: gainsboro;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  footer {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+}
+
+#footer-links {
+  display: flex;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  padding-left: 1rem;
+}
